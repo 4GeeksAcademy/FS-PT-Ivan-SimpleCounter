@@ -40,3 +40,5 @@ function startDecrement() {
         }
     }, 1000);
 }
+
+//This decrement only turn on when seconds was come at 21 seconds then decrement.But its not increment when was come at 0 seconds
