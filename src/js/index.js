@@ -9,5 +9,14 @@ import "../styles/index.css";
 import Home from "./component/home.jsx";
 
 //render your react application
-ReactDOM.createRoot(document.getElementById('app')).render(<Home/>);
+
+let seconds = 0
+const root = ReactDOM.createRoot(document.getElementById('app')); // Crea la raíz solo una vez
+
+setInterval(() => {
+    root.render(<Home time={seconds} />); // Usa root.render() para actualizar el contenido
+    seconds++;
+    console.log('hola');
+}, 1000);
+
 
